@@ -11,6 +11,7 @@
  '(custom-enabled-themes '(faff))
  '(custom-safe-themes
    '("5c1cb093e45723623df244b11caf97592d83946a4c379637756f0dfc68621c63" default))
+ '(custom-theme-directory "~/.emacs.d/themes")
  '(fringe-mode 15 nil (fringe))
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
