@@ -1,6 +1,11 @@
 # Install gopls
+
+### setting environment (~/.bashrc)
+```bash
+cd $(go env GOROOT)/src
+go work init . cmd
 ```
-## Create an empty go.mod file, only for tracking requirements.
+# Create an empty go.mod file, only for tracking requirements.
 cd $(mktemp -d)
 go mod init gopls-unstable
 
@@ -9,7 +14,7 @@ go get -d golang.org/x/tools/gopls@master golang.org/x/tools@master
 
 go install golang.org/x/tools/gopls
 ```
-## Working on the Go source distribution
+### Working on the Go source distribution
 ```
 cd $(go env GOROOT)/src
 go work init . cmd
