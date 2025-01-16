@@ -6,7 +6,7 @@ export NPM_CONFIG_PREFIX=$HOME/.local/
 export PATH="/home/$USER/go/bin:/home/$USER/.local/bin:$NPM_CONFIG_PREFIX/bin:$PATH"
 ```
 ### installation
-```bash
+```sh
 cd $(go env GOROOT)/src
 go work init . cmd
 ### Create an empty go.mod file, only for tracking requirements.
@@ -20,7 +20,7 @@ go install golang.org/x/tools/gopls
 ```
 
 ### Working on the Go source distribution
-```bash
+```sh
 cd $(go env GOROOT)/src
 go work init . cmd
 ```
