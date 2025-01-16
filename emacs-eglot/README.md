@@ -7,8 +7,6 @@ export PATH="/home/$USER/go/bin:/home/$USER/.local/bin:$NPM_CONFIG_PREFIX/bin:$P
 ```
 ### installation
 ```sh
-cd $(go env GOROOT)/src
-go work init . cmd
 ### Create an empty go.mod file, only for tracking requirements.
 cd $(mktemp -d)
 go mod init gopls-unstable
